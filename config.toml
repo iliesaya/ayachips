@@ -1,17 +1,14 @@
-baseurl = "https://example.com"
+baseurl = "http://iliesaya.github.io/"
 languageCode = "en"
-title = "Hugo Kiss theme"
+title = "ayachips"
 theme = "kiss"
-copyright = "&copy; <a href=\"https://github.com/ribice\">Emir Ribic</a> 2017"
-disqusShortname = "shortname"
 googleAnalytics = ""
-Paginate = 5 # Number of posts per page
+Paginate = 15 # Number of posts per page
 enableRobotsTXT = true
 
 [params.rss] # Adding this tag enables RSS feed
 includeContent = true # Includes whole content in rss
-authorName = "Emir Ribic" # Author full name
-authorEmail = "ribice@gmail.com" # Author email
+authorName = "Mohammed-iliès Ayachi" # Author full name
 
 [params.assets]
 customCSS = ["css/custom.css"]
@@ -37,17 +34,17 @@ pageID = ""
 page = "" # Twitter Page username. If not set, params.social.twitter will be used.
 
 [params.social]
-twitter = "ribicemir"
-github = "ribice"
-email = "ribice@gmail.com"
-linkedin = "ribice"
-facebook = "ribice"
+twitter = "iliesaya"
+github = "iliesaya"
+email = "iliesaya@gmail.com"
+linkedin = "mohammed-iliès-ayachi-98941041"
+facebook = "ayachi.ilies"
 instagram = ""
 codepen = ""
 rss = "index.xml" # Add this to show RSS button in social.
 
 [params.social.config]
-platforms = ["github","facebook","twitter","instagram","email","codepen","linkedin"]
+platforms = ["github","facebook","twitter","email","linkedin"]
 
 [params.matomoAnalytics]
 siteID = 1
