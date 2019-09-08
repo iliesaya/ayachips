@@ -2,7 +2,7 @@ baseurl = "http://iliesaya.github.io/"
 languageCode = "en"
 title = "ayachips"
 theme = "kiss"
-googleAnalytics = ""
+googleAnalytics = "UA-147409841-1"
 Paginate = 15 # Number of posts per page
 enableRobotsTXT = true
 
