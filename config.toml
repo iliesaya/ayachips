@@ -1,57 +1,56 @@
 baseurl = "http://iliesaya.github.io/"
-languageCode = "en"
-title = "ayachips"
-theme = "kiss"
+title = "Ayachips"
+theme = "pulp"
+canonifyurls = true
+hasCJKLanguage = true
+# pygmentsCodefences = true
+# pygmentsUseClasses = true
 googleAnalytics = "UA-147409841-1"
-Paginate = 15 # Number of posts per page
-enableRobotsTXT = true
-
-[params.rss] # Adding this tag enables RSS feed
-includeContent = true # Includes whole content in rss
-authorName = "Mohammed-iliès Ayachi" # Author full name
-
-[params.assets]
-customCSS = ["css/custom.css"]
-
-[params.info]
-adsense = "" # Adsense ID (ID only, without ca-pub-)
-enableSocial = true # Adds OpenGraph and Twitter cards
-homeTitle = "" # Title for home page
-poweredby = true # Adds powered by hugo and kiss below Copyright
-related = true # Includes related articles at the bottom of the article
-codeCopy = true # Add copy button above code blocks
-
-[params.features]
-disqusOnDemand = true  # Load Disqus comments on click
-
-
-[params.opengraph.facebook]
-admins = [] # array of Facebook IDs
-appID = ""
-pageID = ""
-
-[params.opengraph.twitter]
-page = "" # Twitter Page username. If not set, params.social.twitter will be used.
-
-[params.social]
-twitter = "iliesaya"
-github = "iliesaya"
-email = "iliesaya@gmail.com"
-linkedin = "mohammed-iliès-ayachi-98941041"
-facebook = "ayachi.ilies"
-instagram = ""
-codepen = ""
-rss = "index.xml" # Add this to show RSS button in social.
-
-[params.social.config]
-platforms = ["github","facebook","twitter","email","linkedin"]
-
-[params.matomoAnalytics]
-siteID = 1
-rootURL = "//matomo.example.com/"
 
 [taxonomies]
-tag ="tags"
+  series = "series"
 
-[blackfriday]
-hrefTargetBlank = true
+[params]
+    author = "Ayachips"
+    avatar = "avatar.jpg"
+    favicon = "favicon.ico"
+    description = """
+        Please write anything here.
+        Profiles, backgrounds, favorite things etc.
+    """
+    publicationYear = "2019"
+    # listPageDateFormat = "January, 2006" # See https://gohugo.io/functions/format/
+    # singlePageDateFormat = "January 2, 2006"
+    # custom_css = ["/css/custom.css"]
+    # custom_js = ["/js/custom.js"]
+
+[outputs]
+    section = ["JSON", "HTML"]
+
+[[menu.main]]
+    identifier = "blog"
+    name = "Blog" #If display text link, cancel comment out
+    pre = "<i class='fa fa-book-open fa-lg'></i>" #Choose your favorite font from Font Awesome
+    url = "/blog/"
+    weight = 10
+
+[[menu.main]]
+    identifier = "twitter"
+    name = "Twitter"
+    pre = "<i class='fab fa-twitter fa-lg'></i>"
+    url = "https://twitter.com/iliesaya"
+    weight = 20
+
+[[menu.main]]
+    identifier = "github"
+    name = "GitHub"
+    pre = "<i class='fab fa-github fa-lg'></i>"
+    url = "https://github.com/iliesaya"
+    weight = 30
+
+[[menu.main]]
+    identifier = "email"
+    name = "Email"
+    pre = "<i class='fa fa-envelope fa-lg'></i>"
+    url = "mailto:ilies@ayachi.fr"
+    weight = 40
